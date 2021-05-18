@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css"); */
+@import url("../flipkart-project/fontawesome-free-5.15.2-web/fontawesome-free-5.15.2-web/css/all.css")
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #eee;
+  font-family: Roboto,Arial,sans-serif;
+  letter-spacing: 0;
+}
+
+#headerBlock {
+  height: 56px;
+  background-color: #2874f0;
+  width: 100%;
+}
+#headerBlock article {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  height: 56px;
+  align-items: center;
+}
+.leftBlock {
+  width: 70%;
+  display: flex;
+}
+
+
+.logoBlock {
+  width: 15%;
+  display:flex;
+  flex-direction: column;
+}
+
+.searchBlock {
+  width: 85%;
+}
+
+.logoBlock img {
+  width: 75px;
+}
+
+.logoBlock a {
+  font-size: 12px;
+  text-decoration: none;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+.childLogo img{
+width: 10px;
+}
+.explore {
+  color: #fff;
+}
+
+.plus {
+  color: #ffe500;
+  font-weight: 600;
+  margin-right:2px ;
+}
+
+.searchBlock form input{
+  width: 95%;
+  height: 40px;
+  padding: 0 0 0 30px;
+  border-radius: 2px;
+  border: none;
+  font-size: 15px;
+}
+
+.searchIcon {
+  position: relative;
+}
+.searchIcon i {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2874f0;
+  top: 3px;
+  left: -35px;
+  position: absolute;
+}
+
+/*----rightBlock header css -----*/
+.rightBlock {
+  width: 30%;
+  display: flex;
+  
+}
+.rightBlock > ul {
+  list-style: none;
+  display: flex;
+}
+.rightBlock > ul li {
+  margin: 0 30px ;
+}
+
+.rightBlock > ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.rightBlock .login {
+  background-color: #fff;
+  color: #2874f0;
+  padding: 8px 50px;
+  font-weight: bold;
+}
+
+.dropdown {
+  position: absolute;
+  list-style: none;
+  background: #fff;
+  top: 55px;
+  width: 300px;
+  display: none;
+  margin: 0 -67px;
+  z-index: 1;
+}
+.dropdown li {
+  margin: 0 !important;
+}
+
+.dropdown li a {
+  margin: 0;
+  color: #111 !important;
+  padding: 12px 26px;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  
+}
+
+.rightBlock ul li:hover > .dropdown {
+  display: block;
+}
+
+.dropdown aside {
+  position: relative;
+}
+
+.arrow-up {
+  border-bottom: 12px solid #fff;
+  border-left: 12px solid transparent;
+  border-right: 12px solid  transparent;
+  height: 0;
+  width: 0;
+  margin: auto;
+  position: absolute;
+    top: -8px;
+    left: 44%;
+}
+
+/*---Offer Block css starts here ----*/
+#offerBlock {
+  height: 110px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+#offerBlock article {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  height: 110px;
+  align-items: center;
+}
+
+#offerBlock article div {
+  flex: 1;
+}
+
+#offerBlock article div img {
+  width: 70px;
+}
+
+#offerBlock article div a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #111;
+}
+
+/*----middle menu ------*/
+ #menuMiddle  {
+  width: 100%;
+  background-color: #fff;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+#menuMiddle nav {
+  width: 90%;
+  margin: 0 auto;
+  height: 50px;
+  display:  flex;
+  align-items: center;
+}
+#menuMiddle nav > ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  
+}
+
+#menuMiddle nav > ul li {
+  margin-right: 70px;
+  position: relative;
+}
+#menuMiddle nav > ul li a {
+  color: #111;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.megaMenu {
+  position: absolute;
+  width: 1300px !important;
+  background-color: #fff;
+ 
+  height: 85vh;
+  top: 35px;
+  text-align: left;
+  display: none;
+}
+.megaMenu div {
+  flex: 1;
+}
+.megaMenu div:nth-child(odd){
+  background-color: #fff;
+}
+
+.megaMenu div:nth-child(even){
+  background-color: #efefef2e;
+}
+.megaMenu ul {
+  list-style: none;
+}
+.megaMenu ul li {
+  margin: 10px 0 !important;
+}
+.megaMenu ul li a{
+  padding: 3px 30px;
+  display: block;
+  font-weight: normal !important;
+  font-size: 14px !important;
+}
+
+#menuMiddle ul li:hover > .megaMenu {
+  display: flex;
+} 
+/* #sidenav article img {
+  height: 100%; 
+  width: 750px;
+  left: 100px;
+ position: fixed;
+} */
